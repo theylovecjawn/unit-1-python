@@ -72,7 +72,7 @@ Then print out the both the original string and tuple.
 
 theList = "1,2,3,4,5,6" #creation of the list
 
-theTuple = tuple(theList.split(",")) #Splicing with the commas so that It will convert
+theTuple = tuple(theList.split(",")) #Splicing with the commas so that It will convert to a string so that I can change it into a tuple.
 
 print(theList) #Printing the list
 print(theTuple) #Printing the converted tuple.
