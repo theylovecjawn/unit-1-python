@@ -1,5 +1,7 @@
 import math #importing math!
 
+
+
 def calculation(): #function for calculations
     if userinp == "add": #adds the two numbers
         print(num1 + num2)
@@ -43,9 +45,25 @@ expo = Expontents
 remain = Remainder
 ''') # creating the key for user inrterface
 
-print("Please select an opperation (case sensitive):") # Telling them to choose
+print("Please select an opperation (case sensitive):") # Telling them to choose a opperation
 
 userinp = input('Pick: ')#asks user for the opperation they want to pick
+
+
+if userinp != "add":
+    print('This is not an opperation') #if it is not any of the opperations it does not print
+elif userinp != "add":
+    print('This is not an opperation')
+elif userinp != "add":
+    print('This is not an opperation')
+elif userinp != "add":
+    print('This is not an opperation')
+elif userinp != "add":
+    print('This is not an opperation')
+elif userinp != "add":
+    print('This is not an opperation')
+elif userinp != "add":
+    print('This is not an opperation')
 
 calculation() # running function defined earlier
 
