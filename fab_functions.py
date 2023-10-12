@@ -16,15 +16,18 @@ sum_numbers(2, 3) #calls the function with the two numbers 2 and 3
 
 ''' Task 3: Calculate Factorial
 # Write a function `factorial(n)` that calculates the factorial of a given number `n`.'''
+def factorial(num): #creates the funtion with a parameter of n
+    fact = 1 #sets the variable to 1
+    if num < 0: #if the number is 0 then it prints that it cant be done
+        print("Sorry, factorial does not exist for negative numbers")
+    elif num == 0: #if the num they enter is = to 0 then the factorial is 1
+        print("The factorial of 0 is 1")
+    else: #if none of this is correct then we add one and multiply by it
+        for i in range(1,num + 1): 
+            fact = fact*i
+    print("The factorial of: ",num,"is",fact) #prints
 
-def factorial(n): #creates the funtion with a parameter of n
-    if n == 0: #when the value of n == 0 then it will return 1 
-        return 1 #returns 1
-    else: #if the if is not true this runs
-        return n * factorial(n - 1) # returns the factorial of the number
-        
-
-print(factorial(5)) #prints and calls the factorial function
+factorial(5)
 
 '''Task 4: Check Even or Odd
 # Write a function `is_even(num)` that takes a number as a parameter and returns `True` if the number is even, and `False` otherwise.
