@@ -48,7 +48,7 @@ def convert2(date_time): #creation of the function converts the string to a date
     format = '%Y/%d/%m' #sets the format to yyyy/dd/mm
     datetime_str = datetime.datetime.strptime(date_time, format) #uses the strptime  to set the format
  
-    return datetime_str #returns datetime_str
+    return datetime_str #returns datetime_str   
 birthday = input('Please input your birth day (YYYY/DD/MM): ') #asks user for an input i the yyyy/dd/mm format
 
 d = convert2(birthday) #calls the convert2 function and sets the input to a variable
